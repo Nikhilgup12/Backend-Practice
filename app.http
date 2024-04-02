@@ -1,10 +1,104 @@
 POST http://localhost:3000/image
 Content-Type: application/json 
 
-{
-    "id":1,
-    "name":"Nature Landscape",
-    "location":"Forest",
-    "image_url":"https://example.com/nature.jpg",
-    "description":"A beautiful landscape of a forest with lush green trees and a clear blue sky."
-}
+[
+    {
+        "id": 1,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+    {
+        "id": 2,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+    {
+        "id": 3,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 4,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 4,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 6,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 7,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 8,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 9,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 10,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 11,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 12,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 13,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    },
+     {
+        "id": 14,
+        "name": "Nature Landscape",
+        "location": "Forest",
+        "imageUrl": "https://example.com/nature.jpg",
+        "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
+    }
+]
+

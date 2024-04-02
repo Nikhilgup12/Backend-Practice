@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const cors = require("cors");
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const dbpath = path.join(__dirname, "image.db");
 app.use(express.json());
+app.use(cors());
 let db = null;
 const initialize = async () => {
   try {
@@ -25,7 +27,7 @@ initialize();
 
 app.post("/image", async (request, response) => {
   const getDetails = request.body;
-  const { id, name, location, image_url, description } = getDetails;
+  const { id, name, location, imageUrl, description } = getDetails;
   const getImageQuery = `insert into images (id,name,location,image_url,description) 
     values(
         '${id}',
