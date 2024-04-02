@@ -25,18 +25,29 @@ const initialize = async () => {
 
 initialize();
 
+app.get("/image", async (request, response) => {
+  const query = `select * from images`;
+  const result = await db.all(query);
+  response.send(result);
+});
+
 app.post("/image", async (request, response) => {
-  const getDetails = request.body;
-  const { id, name, location, imageUrl, description } = getDetails;
-  const getImageQuery = `insert into images (id,name,location,image_url,description) 
-    values(
-        '${id}',
-         '${name}',
-         '${location}',
-         '${imageUrl}',
-         '${description}'
-    );
-    `;
-  await db.run(getImageQuery);
-  response.send("Image Successfully Added");
+  const { array } = request.body;
+
+  array.map(async (image) => {
+    const { id, name, location, imageUrl, description } = image;
+    const insertImageQuery = `
+        INSERT INTO images (id, name, location, image_url, description)
+        VALUES (
+          ${id},
+          '${name}',
+          '${location}',
+          '${imageUrl}',
+          '${description}'
+        )
+      `;
+    await db.run(insertImageQuery);
+  });
+
+  response.send("Images Successfully Added");
 });

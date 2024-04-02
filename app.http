@@ -1,7 +1,12 @@
+
+GET http://localhost:3000/image
+###  
+
 POST http://localhost:3000/image
 Content-Type: application/json 
 
-[
+{
+    "array":[
     {
         "id": 1,
         "name": "Nature Landscape",
@@ -31,7 +36,7 @@ Content-Type: application/json
         "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
     },
      {
-        "id": 4,
+        "id": 5,
         "name": "Nature Landscape",
         "location": "Forest",
         "imageUrl": "https://example.com/nature.jpg",
@@ -100,5 +105,7 @@ Content-Type: application/json
         "imageUrl": "https://example.com/nature.jpg",
         "description": "A beautiful landscape of a forest with lush green trees and a clear blue sky."
     }
-]
+    ]
+}
 
+    
