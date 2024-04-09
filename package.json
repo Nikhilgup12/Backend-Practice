@@ -15,5 +15,14 @@
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikhilgup12/Backend-Practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nikhilgup12/Backend-Practice/issues"
+  },
+  "homepage": "https://github.com/Nikhilgup12/Backend-Practice#readme",
   "description": ""
 }

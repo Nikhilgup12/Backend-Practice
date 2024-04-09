@@ -51,3 +51,26 @@ app.post("/image", async (request, response) => {
 
   response.send("Images Successfully Added");
 });
+
+app.post("/images/imagesId", async (request, response) => {
+  const { array } = request.body;
+  const { imagesId } = request.params;
+  array.map(async (image) => {
+    const { id, name, location, imageUrl, description, relatedImages } = image;
+    const insertImageQuery = `
+        INSERT INTO images (id, name, location, image_url, description, related_images)
+        VALUES (
+          ${id},
+          '${name}',
+          '${location}',
+          '${imageUrl}',
+          '${description}',
+          '${related_images}'
+        )
+        where id =${imagesId}
+      `;
+    await db.run(insertImageQuery);
+  });
+
+  response.send("Images Successfully Added");
+});
